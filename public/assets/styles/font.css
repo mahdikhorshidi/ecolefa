@@ -1,0 +1,5 @@
+/*custom*/
+@import url(../fonts/IRANSans/font.css);
+body{
+  font-family: IRANSans, Tahoma, Arial, sans-serif;
+}
