@@ -7,7 +7,7 @@
 <div class="form-group row">
     <label for="inputName" class="col-sm-2 form-control-label">صاحب امتیار</label>
     <div class="col-sm-10">
-        {!! Form::select('user_id', \App\User::pluck('name', 'id')->all() , NULL, ['placeholder' => 'صاحب امتیار','class' => 'form-control','required']) !!}
+        {!! Form::select('user_id', \App\User::pluck('name', 'id')->all() , NULL, ['placeholder' => 'صاحب امتیار','class' => 'form-control select2', 'ui-jp' => 'select2', 'ui-options' => '{theme: \'bootstrap\'}','required']) !!}
     </div>
 </div>
 <div class="form-group row">

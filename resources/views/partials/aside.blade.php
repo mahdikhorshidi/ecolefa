@@ -55,7 +55,7 @@
                             </li>
                         </ul>
                     </li>
-                    @hasrole('admin')
+                    @hasrole('super-admin')
                     <li class="active">
                         <a>
                     <span class="nav-caret">

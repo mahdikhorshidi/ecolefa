@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="padding">
+    <div class="container">
         <div class="box">
             <div class="box-header">
                 <h3>ثبت کاربر جدید</h3>
@@ -15,17 +15,6 @@
             <div class="box-divider m-0"></div>
             {!! Form::open(['route' => 'dashboard.admin.users.store', 'method' => 'post']) !!}
             <div class="box-body">
-                @if (count($errors) > 0)
-                    <div class="alert alert-danger">
-                        <strong>Whoops!</strong> There were some problems with your input.<br><br>
-                        <ul>
-                            @foreach ($errors->all() as $error)
-                                <li>{{ $error }}</li>
-                            @endforeach
-                        </ul>
-                    </div>
-                @endif
-
                 @include('dashboard.admin.users.form')
             </div>
             <div class="box-footer text-left">

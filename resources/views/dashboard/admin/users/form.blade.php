@@ -25,6 +25,6 @@
 <div class="form-group row">
     <label for="inputPassword" class="col-sm-2 form-control-label">نقش ها</label>
     <div class="col-sm-10">
-        {!! Form::select('roles[]', $roles,$userRole, array('class' => 'form-control','multiple')) !!}
+        {!! Form::select('roles[]', $roles,$userRole, array('class' => 'form-control select2-multiple', 'ui-jp' => 'select2', 'ui-options' => '{theme: \'bootstrap\'}','multiple')) !!}
     </div>
 </div>

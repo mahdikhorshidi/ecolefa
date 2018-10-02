@@ -27,7 +27,9 @@ class UserController extends Controller
      */
     public function create()
     {
-        return view('dashboard.admin.users.create');
+        $roles = Role::pluck('name','name')->all();
+        $userRole = Null;
+        return view('dashboard.admin.users.create', compact('roles','userRole'));
     }
 
     /**
