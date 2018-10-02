@@ -4,8 +4,7 @@
         <div class="navbar no-radius">
             <!-- brand -->
             <a class="navbar-brand">
-                <div ui-include="'/assets/images/logo.svg'"></div>
-                <img src="/assets/images/logo.png" alt="." class="hide">
+                {!! Theme::img('assets/images/logo.png', 'logo'); !!}
                 <span class="hidden-folded inline">ایکُلفا</span>
             </a>
             <!-- / brand -->
@@ -109,7 +108,7 @@
             <div class="nav-fold">
                 <a href="profile.html">
         	    <span class="pull-left">
-        	      <img src="/assets/images/a0.jpg" alt="..." class="w-40 img-circle">
+                {!! Theme::img('assets/images/a0.jpg', 'User Profile', 'w-40 img-circle'); !!}
         	    </span>
                     <span class="clear hidden-folded p-x">
                     @if (!Auth::guest())

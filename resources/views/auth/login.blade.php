@@ -8,7 +8,7 @@
             </div>
         </div>
         <div class="p-a-md box-color r box-shadow-z1 text-color m-a">
-            <div class="m-b text-sm">با کاربری شاهین بال خود وارد شوید
+            <div class="m-b text-sm">با بخش کاربری خود وارد شوید
             </div>
             <form class="form-horizontal" method="POST" action="{{ route('login') }}">
                 {{ csrf_field() }}
