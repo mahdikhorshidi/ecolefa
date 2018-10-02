@@ -20,7 +20,6 @@
                         <a href="/dashboard" >
                     <span class="nav-icon">
                       <i class="material-icons">&#xe3fc;
-                        <span ui-include="'/assets/images/i_0.svg'"></span>
                       </i>
                     </span>
                             <span class="nav-text">داشبورد</span>
@@ -36,7 +35,6 @@
                     </span>
                             <span class="nav-icon">
                       <i class="material-icons">&#xe5c3;
-                        <span ui-include="'/assets/images/i_1.svg'"></span>
                       </i>
                     </span>
                             <span class="nav-text">اعضا</span>
@@ -62,7 +60,6 @@
                     </span>
                             <span class="nav-icon">
                       <i class="material-icons">&#xe5c3;
-                        <span ui-include="'/assets/images/i_1.svg'"></span>
                       </i>
                     </span>
                             <span class="nav-text">مدیریت</span>
