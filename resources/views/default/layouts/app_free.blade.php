@@ -35,7 +35,18 @@
 </head>
 <body>
 <div class="app" id="app">
+    <!-- content -->
+    <div id="content" class="app-content box-shadow-z0" role="main">
+        <div class="app-header white box-shadow">
+        @include('default.schools.partials.header')
+        </div>
+        <div class="app-footer white box-shadow">
+        @include('default.schools.partials.footer')
+        </div>
+        <div class="app-body">
         @yield('content')
+</div>
+</div>
 </div>
 <!-- build:js /scripts/app.html.js -->
 <!-- jQuery --> 

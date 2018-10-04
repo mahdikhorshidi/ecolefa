@@ -1623,7 +1623,7 @@ body {
   z-index: 1;
   margin: inherit; }
   .app-footer:not(.hide) ~ .app-body {
-    padding-bottom: 3.125rem; }
+    padding-bottom: 15.125rem; }
 
 .app-fixed {
   overflow: hidden; }

@@ -4,15 +4,11 @@ namespace App\Http\Controllers\Schools;
 
 use App\Models\School;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\Schools\BaseController;
 
-class WelcomeController extends Controller
+class WelcomeController extends BaseController
 {
-    public function index($domain,$tld){
-        $domain = $domain.'.'.$tld;
-        if ($domain == 'ecolefa.test')
-            return view('welcome');
-        $school = School::where('domain', $domain)->first();
-        return view('schools/welcome', compact('school'));
+    public function index() {
+            return view('schools/welcome', compact('school'));
     }
 }
