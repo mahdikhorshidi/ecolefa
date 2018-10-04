@@ -39,7 +39,7 @@ class RouteServiceProvider extends ServiceProvider
         $this->mapWebRoutes();
 
         Route::domain('{school}.{domain}.{tld}')
-            ->middleware(['web', 'setTheme:default'])
+            ->middleware(['web', 'setTheme:default','SchoolsMiddleware'])
             ->name('schools.')
             ->namespace($this->namespace . '\\Schools')
             ->group(base_path('routes/schools.php'));
