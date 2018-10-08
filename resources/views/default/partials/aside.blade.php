@@ -50,6 +50,11 @@
                                     <span class="nav-text">مدرسه</span>
                                 </a>
                             </li>
+                            <li>
+                                <a href="/dashboard/articles" >
+                                    <span class="nav-text">مطالب</span>
+                                </a>
+                            </li>
                         </ul>
                     </li>
                     @hasrole('super-admin')

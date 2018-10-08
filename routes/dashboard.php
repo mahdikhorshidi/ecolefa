@@ -8,6 +8,7 @@ Route::resource('profile', 'ProfileController')->only([
     'index', 'create', 'store', 'update'
 ]);
 Route::get('profile/edit', 'ProfileController@edit')->name('profile.edit');
+Route::resource('articles', 'ArticleController');
 
 Route::prefix('admin')
     ->middleware(['web', 'auth'])
@@ -18,4 +19,7 @@ Route::prefix('admin')
         Route::resource('schools', 'SchoolController');
         Route::resource('roles', 'RoleController');
         Route::resource('permissions', 'PermissionController');
+        Route::resource('permissions', 'PermissionController');
+        Route::resource('articles', 'ArticleController');
+
     });
